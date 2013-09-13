@@ -1,5 +1,7 @@
-﻿using System;
+﻿using CloudFeed.Models;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -10,6 +12,8 @@ namespace CloudFeed.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.Feeds = Feeds.GetFeeds(Server.MapPath("~/Feeds.txt"));
+
             return View();
         }
 

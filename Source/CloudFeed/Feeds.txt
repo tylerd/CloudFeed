@@ -1,0 +1,2 @@
+﻿http://blog.tylerdoerksen.com/rss
+http://blogs.msdn.com/b/windowsazure/rss.aspx
